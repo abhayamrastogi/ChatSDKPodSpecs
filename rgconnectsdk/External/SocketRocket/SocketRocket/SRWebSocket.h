@@ -42,9 +42,24 @@ typedef enum SRStatusCode : NSInteger {
 extern NSString *const SRWebSocketErrorDomain;
 extern NSString *const SRHTTPResponseErrorKey;
 
+
 #pragma mark - SRWebSocketDelegate
 
-@protocol SRWebSocketDelegate;
+@protocol SRWebSocketDelegate <NSObject>
+
+// message will either be an NSString if the server is using text
+// or NSData if the server is using binary.
+@required
+- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message;
+
+@optional
+
+- (void)webSocketDidOpen:(SRWebSocket *)webSocket;
+- (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error;
+- (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean;
+- (void)webSocket:(SRWebSocket *)webSocket didReceivePong:(NSData *)pongPayload;
+
+@end
 
 #pragma mark - SRWebSocket
 
@@ -94,22 +109,6 @@ extern NSString *const SRHTTPResponseErrorKey;
 
 @end
 
-#pragma mark - SRWebSocketDelegate
-
-@protocol SRWebSocketDelegate <NSObject>
-
-// message will either be an NSString if the server is using text
-// or NSData if the server is using binary.
-- (void)webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message;
-
-@optional
-
-- (void)webSocketDidOpen:(SRWebSocket *)webSocket;
-- (void)webSocket:(SRWebSocket *)webSocket didFailWithError:(NSError *)error;
-- (void)webSocket:(SRWebSocket *)webSocket didCloseWithCode:(NSInteger)code reason:(NSString *)reason wasClean:(BOOL)wasClean;
-- (void)webSocket:(SRWebSocket *)webSocket didReceivePong:(NSData *)pongPayload;
-
-@end
 
 #pragma mark - NSURLRequest (CertificateAdditions)
 

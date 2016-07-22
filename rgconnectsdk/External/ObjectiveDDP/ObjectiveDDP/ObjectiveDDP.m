@@ -3,6 +3,11 @@
 #import "SRWebSocket.h"
 #import "M13OrderedDictionary.h"
 
+
+@interface ObjectiveDDP()<SRWebSocketDelegate>
+
+@end
+
 @implementation ObjectiveDDP
 
 - (id)initWithURLString:(NSString *)urlString

@@ -30,7 +30,7 @@ s.dependency 'ObjectMapper'
 
 # 8
 s.source_files = "RGConnectSDK/**/*.{swift}"
+s.source_files = "RGConnectSDK/**/*.{h,m}"
 
 # 9
-s.resources = "RGConnectSDK/**/*.{png,jpeg,jpg,storyboard,xib}"
 end

@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 @class SRWebSocket;
-@protocol SRWebSocketDelegate;
+
 @protocol ObjectiveDDPDelegate;
 
-@interface ObjectiveDDP : NSObject <SRWebSocketDelegate>
+@interface ObjectiveDDP : NSObject
 
 @property (nonatomic, copy) NSString *urlString;
 @property (nonatomic, assign) id <ObjectiveDDPDelegate> delegate;

@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7534CBEC1D3E055900017C7A /* rgconnectsdk.h in Headers */ = {isa = PBXBuildFile; fileRef = 7534CBEB1D3E055900017C7A /* rgconnectsdk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7534CBF31D3E055900017C7A /* rgconnectsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7534CBE81D3E055900017C7A /* rgconnectsdk.framework */; };
+		7534CBF81D3E055900017C7A /* rgconnectsdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7534CBF71D3E055900017C7A /* rgconnectsdkTests.swift */; };
+		7534CC071D3E30D800017C7A /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7534CC061D3E30D800017C7A /* ChatMessage.swift */; };
+		7540D5F21D3F53B200D0C911 /* M13OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 7540D5DB1D3F53B200D0C911 /* M13OrderedDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7540D5F31D3F53B200D0C911 /* M13OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7540D5DC1D3F53B200D0C911 /* M13OrderedDictionary.m */; };
+		7540D5F41D3F53B200D0C911 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 7540D5DD1D3F53B200D0C911 /* readme.md */; };
+		7540D5F51D3F53B200D0C911 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7540D5DF1D3F53B200D0C911 /* LICENSE.txt */; };
+		7540D5F61D3F53B200D0C911 /* BSONIdGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 7540D5E11D3F53B200D0C911 /* BSONIdGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7540D5F71D3F53B200D0C911 /* BSONIdGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7540D5E21D3F53B200D0C911 /* BSONIdGenerator.m */; };
+		7540D5F81D3F53B200D0C911 /* DependencyProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 7540D5E31D3F53B200D0C911 /* DependencyProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7540D5F91D3F53B200D0C911 /* DependencyProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7540D5E41D3F53B200D0C911 /* DependencyProvider.m */; };
+		7540D5FA1D3F53B200D0C911 /* MeteorClient+Parsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7540D5E51D3F53B200D0C911 /* MeteorClient+Parsing.m */; };
+		7540D5FB1D3F53B200D0C911 /* MeteorClient+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7540D5E61D3F53B200D0C911 /* MeteorClient+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7540D5FC1D3F53B200D0C911 /* MeteorClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 7540D5E71D3F53B200D0C911 /* MeteorClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7540D5FD1D3F53B200D0C911 /* MeteorClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 7540D5E81D3F53B200D0C911 /* MeteorClient.m */; };
+		7540D5FE1D3F53B200D0C911 /* ObjectiveDDP.h in Headers */ = {isa = PBXBuildFile; fileRef = 7540D5E91D3F53B200D0C911 /* ObjectiveDDP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7540D5FF1D3F53B200D0C911 /* ObjectiveDDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 7540D5EA1D3F53B200D0C911 /* ObjectiveDDP.m */; };
+		7540D6001D3F53B200D0C911 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 7540D5EB1D3F53B200D0C911 /* README.md */; };
+		7540D6011D3F53B200D0C911 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7540D5ED1D3F53B200D0C911 /* LICENSE */; };
+		7540D6021D3F53B200D0C911 /* README.rst in Resources */ = {isa = PBXBuildFile; fileRef = 7540D5EE1D3F53B200D0C911 /* README.rst */; };
+		7540D6031D3F53B200D0C911 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 7540D5F01D3F53B200D0C911 /* SRWebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7540D6041D3F53B200D0C911 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7540D5F11D3F53B200D0C911 /* SRWebSocket.m */; };
+		7540D6061D3F59B100D0C911 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7540D6051D3F59B100D0C911 /* libicucore.tbd */; };
+		7540D6081D3F59BD00D0C911 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7540D6071D3F59BD00D0C911 /* CFNetwork.framework */; };
+		7560B4FA1D3F9D8100D28F30 /* UserAuthNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7560B4F91D3F9D8100D28F30 /* UserAuthNetworkHandler.swift */; };
+		7560B4FC1D3FA6A700D28F30 /* NotificationNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7560B4FB1D3FA6A700D28F30 /* NotificationNetworkHandler.swift */; };
+		7560B4FF1D3FB40900D28F30 /* RGChatMessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7560B4FE1D3FB40900D28F30 /* RGChatMessageService.swift */; };
+		7560B5011D3FDA2B00D28F30 /* RGUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7560B5001D3FDA2B00D28F30 /* RGUserService.swift */; };
+		75C4F1C31D3F5FA20066E377 /* ChatMessageNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C4F1C21D3F5FA20066E377 /* ChatMessageNetworkHandler.swift */; };
+		75C87D641D40961D00B341E7 /* RGNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C87D631D40961D00B341E7 /* RGNotificationService.swift */; };
+		75C87D661D409F1600B341E7 /* RGChatRoomService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C87D651D409F1600B341E7 /* RGChatRoomService.swift */; };
+		75C87D681D40AD6600B341E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C87D671D40AD6600B341E7 /* User.swift */; };
+		75C87D6A1D40C1A400B341E7 /* MeteorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C87D691D40C1A400B341E7 /* MeteorService.swift */; };
+		75C87D6D1D40C2A700B341E7 /* RGConnectSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C87D6C1D40C2A700B341E7 /* RGConnectSettings.swift */; };
+		75C87D701D40CDA100B341E7 /* RGConnectSharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C87D6F1D40CDA100B341E7 /* RGConnectSharedManager.swift */; };
+		75C87D731D40E39100B341E7 /* RGConnectChatDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C87D721D40E39100B341E7 /* RGConnectChatDelegate.swift */; };
+		75C87D771D41101900B341E7 /* RGSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C87D761D41101900B341E7 /* RGSocketManager.swift */; };
+		75FD6E631D3E4C0B00BECD40 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FD6E621D3E4C0B00BECD40 /* StringExtension.swift */; };
+		75FD6E651D3E51DA00BECD40 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FD6E641D3E51DA00BECD40 /* ChatRoom.swift */; };
+		75FD6E6B1D3E648A00BECD40 /* ChatRoomNetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FD6E6A1D3E648A00BECD40 /* ChatRoomNetworkHandler.swift */; };
+		8CEC31CD9CD3FE7C51037787 /* Pods_rgconnectsdkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E7ADB4764DDF1AFBA90392 /* Pods_rgconnectsdkTests.framework */; };
+		E6F8D90FA6A6B00CFB3D4CB3 /* Pods_rgconnectsdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FE316EBD20B3760030D099 /* Pods_rgconnectsdk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7534CBF41D3E055900017C7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7534CBDF1D3E055900017C7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7534CBE71D3E055900017C7A;
+			remoteInfo = rgconnectsdk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03E7ADB4764DDF1AFBA90392 /* Pods_rgconnectsdkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rgconnectsdkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7534CBE81D3E055900017C7A /* rgconnectsdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = rgconnectsdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7534CBEB1D3E055900017C7A /* rgconnectsdk.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rgconnectsdk.h; sourceTree = "<group>"; };
+		7534CBED1D3E055900017C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7534CBF21D3E055900017C7A /* rgconnectsdkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rgconnectsdkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7534CBF71D3E055900017C7A /* rgconnectsdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rgconnectsdkTests.swift; sourceTree = "<group>"; };
+		7534CBF91D3E055900017C7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7534CC061D3E30D800017C7A /* ChatMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		7540D5DB1D3F53B200D0C911 /* M13OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = M13OrderedDictionary.h; sourceTree = "<group>"; };
+		7540D5DC1D3F53B200D0C911 /* M13OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = M13OrderedDictionary.m; sourceTree = "<group>"; };
+		7540D5DD1D3F53B200D0C911 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		7540D5DF1D3F53B200D0C911 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		7540D5E11D3F53B200D0C911 /* BSONIdGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONIdGenerator.h; sourceTree = "<group>"; };
+		7540D5E21D3F53B200D0C911 /* BSONIdGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONIdGenerator.m; sourceTree = "<group>"; };
+		7540D5E31D3F53B200D0C911 /* DependencyProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DependencyProvider.h; sourceTree = "<group>"; };
+		7540D5E41D3F53B200D0C911 /* DependencyProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DependencyProvider.m; sourceTree = "<group>"; };
+		7540D5E51D3F53B200D0C911 /* MeteorClient+Parsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MeteorClient+Parsing.m"; sourceTree = "<group>"; };
+		7540D5E61D3F53B200D0C911 /* MeteorClient+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MeteorClient+Private.h"; sourceTree = "<group>"; };
+		7540D5E71D3F53B200D0C911 /* MeteorClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeteorClient.h; sourceTree = "<group>"; };
+		7540D5E81D3F53B200D0C911 /* MeteorClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeteorClient.m; sourceTree = "<group>"; };
+		7540D5E91D3F53B200D0C911 /* ObjectiveDDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveDDP.h; sourceTree = "<group>"; };
+		7540D5EA1D3F53B200D0C911 /* ObjectiveDDP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveDDP.m; sourceTree = "<group>"; };
+		7540D5EB1D3F53B200D0C911 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7540D5ED1D3F53B200D0C911 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		7540D5EE1D3F53B200D0C911 /* README.rst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.rst; sourceTree = "<group>"; };
+		7540D5F01D3F53B200D0C911 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		7540D5F11D3F53B200D0C911 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		7540D6051D3F59B100D0C911 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		7540D6071D3F59BD00D0C911 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7560B4F91D3F9D8100D28F30 /* UserAuthNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAuthNetworkHandler.swift; sourceTree = "<group>"; };
+		7560B4FB1D3FA6A700D28F30 /* NotificationNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNetworkHandler.swift; sourceTree = "<group>"; };
+		7560B4FE1D3FB40900D28F30 /* RGChatMessageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGChatMessageService.swift; sourceTree = "<group>"; };
+		7560B5001D3FDA2B00D28F30 /* RGUserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGUserService.swift; sourceTree = "<group>"; };
+		75C4F1C21D3F5FA20066E377 /* ChatMessageNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageNetworkHandler.swift; sourceTree = "<group>"; };
+		75C87D631D40961D00B341E7 /* RGNotificationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGNotificationService.swift; sourceTree = "<group>"; };
+		75C87D651D409F1600B341E7 /* RGChatRoomService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGChatRoomService.swift; sourceTree = "<group>"; };
+		75C87D671D40AD6600B341E7 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		75C87D691D40C1A400B341E7 /* MeteorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteorService.swift; sourceTree = "<group>"; };
+		75C87D6C1D40C2A700B341E7 /* RGConnectSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGConnectSettings.swift; sourceTree = "<group>"; };
+		75C87D6F1D40CDA100B341E7 /* RGConnectSharedManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGConnectSharedManager.swift; sourceTree = "<group>"; };
+		75C87D721D40E39100B341E7 /* RGConnectChatDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGConnectChatDelegate.swift; sourceTree = "<group>"; };
+		75C87D761D41101900B341E7 /* RGSocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGSocketManager.swift; sourceTree = "<group>"; };
+		75FD6E621D3E4C0B00BECD40 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		75FD6E641D3E51DA00BECD40 /* ChatRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoom.swift; sourceTree = "<group>"; };
+		75FD6E6A1D3E648A00BECD40 /* ChatRoomNetworkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRoomNetworkHandler.swift; sourceTree = "<group>"; };
+		C32C957C2EA213C158E5B940 /* Pods-rgconnectsdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rgconnectsdk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rgconnectsdk/Pods-rgconnectsdk.debug.xcconfig"; sourceTree = "<group>"; };
+		CA511425EB7CCDB73379D0B8 /* Pods-rgconnectsdkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rgconnectsdkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rgconnectsdkTests/Pods-rgconnectsdkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9FE316EBD20B3760030D099 /* Pods_rgconnectsdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rgconnectsdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB08AF89CCC52A49D8AABA70 /* Pods-rgconnectsdkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rgconnectsdkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-rgconnectsdkTests/Pods-rgconnectsdkTests.release.xcconfig"; sourceTree = "<group>"; };
+		F6A06128101CE43B1A4F0584 /* Pods-rgconnectsdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rgconnectsdk.release.xcconfig"; path = "Pods/Target Support Files/Pods-rgconnectsdk/Pods-rgconnectsdk.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7534CBE41D3E055900017C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7540D6081D3F59BD00D0C911 /* CFNetwork.framework in Frameworks */,
+				7540D6061D3F59B100D0C911 /* libicucore.tbd in Frameworks */,
+				E6F8D90FA6A6B00CFB3D4CB3 /* Pods_rgconnectsdk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7534CBEF1D3E055900017C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7534CBF31D3E055900017C7A /* rgconnectsdk.framework in Frameworks */,
+				8CEC31CD9CD3FE7C51037787 /* Pods_rgconnectsdkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7534CBDE1D3E055900017C7A = {
+			isa = PBXGroup;
+			children = (
+				7534CBEA1D3E055900017C7A /* rgconnectsdk */,
+				7534CBF61D3E055900017C7A /* rgconnectsdkTests */,
+				7534CBE91D3E055900017C7A /* Products */,
+				D65CA51D4FFC26C7BFF546A8 /* Pods */,
+				C11703E13F5F6398F89B4622 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7534CBE91D3E055900017C7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7534CBE81D3E055900017C7A /* rgconnectsdk.framework */,
+				7534CBF21D3E055900017C7A /* rgconnectsdkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7534CBEA1D3E055900017C7A /* rgconnectsdk */ = {
+			isa = PBXGroup;
+			children = (
+				75C87D711D40E37A00B341E7 /* Delegates */,
+				75C87D6E1D40CD9000B341E7 /* Managers */,
+				75C87D6B1D40C29600B341E7 /* Config */,
+				7560B4FD1D3FB34B00D28F30 /* Services */,
+				7540D5AE1D3F533100D0C911 /* External */,
+				75FD6E691D3E647B00BECD40 /* NetworkHandlers */,
+				75FD6E611D3E4BFF00BECD40 /* Utils */,
+				7534CC051D3E30CD00017C7A /* Models */,
+				7534CBEB1D3E055900017C7A /* rgconnectsdk.h */,
+				7534CBED1D3E055900017C7A /* Info.plist */,
+			);
+			path = rgconnectsdk;
+			sourceTree = "<group>";
+		};
+		7534CBF61D3E055900017C7A /* rgconnectsdkTests */ = {
+			isa = PBXGroup;
+			children = (
+				7534CBF71D3E055900017C7A /* rgconnectsdkTests.swift */,
+				7534CBF91D3E055900017C7A /* Info.plist */,
+			);
+			path = rgconnectsdkTests;
+			sourceTree = "<group>";
+		};
+		7534CC051D3E30CD00017C7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7534CC061D3E30D800017C7A /* ChatMessage.swift */,
+				75FD6E641D3E51DA00BECD40 /* ChatRoom.swift */,
+				75C87D671D40AD6600B341E7 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7540D5AE1D3F533100D0C911 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				7540D5DA1D3F53B200D0C911 /* M13OrderedDictionary */,
+				7540D5DE1D3F53B200D0C911 /* ObjectiveDDP */,
+				7540D5EC1D3F53B200D0C911 /* SocketRocket */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		7540D5DA1D3F53B200D0C911 /* M13OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				7540D5DB1D3F53B200D0C911 /* M13OrderedDictionary.h */,
+				7540D5DC1D3F53B200D0C911 /* M13OrderedDictionary.m */,
+				7540D5DD1D3F53B200D0C911 /* readme.md */,
+			);
+			path = M13OrderedDictionary;
+			sourceTree = "<group>";
+		};
+		7540D5DE1D3F53B200D0C911 /* ObjectiveDDP */ = {
+			isa = PBXGroup;
+			children = (
+				7540D5DF1D3F53B200D0C911 /* LICENSE.txt */,
+				7540D5E01D3F53B200D0C911 /* ObjectiveDDP */,
+				7540D5EB1D3F53B200D0C911 /* README.md */,
+			);
+			path = ObjectiveDDP;
+			sourceTree = "<group>";
+		};
+		7540D5E01D3F53B200D0C911 /* ObjectiveDDP */ = {
+			isa = PBXGroup;
+			children = (
+				7540D5E11D3F53B200D0C911 /* BSONIdGenerator.h */,
+				7540D5E21D3F53B200D0C911 /* BSONIdGenerator.m */,
+				7540D5E31D3F53B200D0C911 /* DependencyProvider.h */,
+				7540D5E41D3F53B200D0C911 /* DependencyProvider.m */,
+				7540D5E51D3F53B200D0C911 /* MeteorClient+Parsing.m */,
+				7540D5E61D3F53B200D0C911 /* MeteorClient+Private.h */,
+				7540D5E71D3F53B200D0C911 /* MeteorClient.h */,
+				7540D5E81D3F53B200D0C911 /* MeteorClient.m */,
+				7540D5E91D3F53B200D0C911 /* ObjectiveDDP.h */,
+				7540D5EA1D3F53B200D0C911 /* ObjectiveDDP.m */,
+			);
+			path = ObjectiveDDP;
+			sourceTree = "<group>";
+		};
+		7540D5EC1D3F53B200D0C911 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				7540D5ED1D3F53B200D0C911 /* LICENSE */,
+				7540D5EE1D3F53B200D0C911 /* README.rst */,
+				7540D5EF1D3F53B200D0C911 /* SocketRocket */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		7540D5EF1D3F53B200D0C911 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				7540D5F01D3F53B200D0C911 /* SRWebSocket.h */,
+				7540D5F11D3F53B200D0C911 /* SRWebSocket.m */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		7560B4FD1D3FB34B00D28F30 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7560B4FE1D3FB40900D28F30 /* RGChatMessageService.swift */,
+				7560B5001D3FDA2B00D28F30 /* RGUserService.swift */,
+				75C87D631D40961D00B341E7 /* RGNotificationService.swift */,
+				75C87D651D409F1600B341E7 /* RGChatRoomService.swift */,
+				75C87D691D40C1A400B341E7 /* MeteorService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		75C87D6B1D40C29600B341E7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				75C87D6C1D40C2A700B341E7 /* RGConnectSettings.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		75C87D6E1D40CD9000B341E7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				75C87D6F1D40CDA100B341E7 /* RGConnectSharedManager.swift */,
+				75C87D761D41101900B341E7 /* RGSocketManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		75C87D711D40E37A00B341E7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				75C87D721D40E39100B341E7 /* RGConnectChatDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		75FD6E611D3E4BFF00BECD40 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				75FD6E621D3E4C0B00BECD40 /* StringExtension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		75FD6E691D3E647B00BECD40 /* NetworkHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				75FD6E6A1D3E648A00BECD40 /* ChatRoomNetworkHandler.swift */,
+				75C4F1C21D3F5FA20066E377 /* ChatMessageNetworkHandler.swift */,
+				7560B4F91D3F9D8100D28F30 /* UserAuthNetworkHandler.swift */,
+				7560B4FB1D3FA6A700D28F30 /* NotificationNetworkHandler.swift */,
+			);
+			path = NetworkHandlers;
+			sourceTree = "<group>";
+		};
+		C11703E13F5F6398F89B4622 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7540D6071D3F59BD00D0C911 /* CFNetwork.framework */,
+				7540D6051D3F59B100D0C911 /* libicucore.tbd */,
+				D9FE316EBD20B3760030D099 /* Pods_rgconnectsdk.framework */,
+				03E7ADB4764DDF1AFBA90392 /* Pods_rgconnectsdkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D65CA51D4FFC26C7BFF546A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C32C957C2EA213C158E5B940 /* Pods-rgconnectsdk.debug.xcconfig */,
+				F6A06128101CE43B1A4F0584 /* Pods-rgconnectsdk.release.xcconfig */,
+				CA511425EB7CCDB73379D0B8 /* Pods-rgconnectsdkTests.debug.xcconfig */,
+				DB08AF89CCC52A49D8AABA70 /* Pods-rgconnectsdkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7534CBE51D3E055900017C7A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7540D5F81D3F53B200D0C911 /* DependencyProvider.h in Headers */,
+				7540D5FC1D3F53B200D0C911 /* MeteorClient.h in Headers */,
+				7540D5FB1D3F53B200D0C911 /* MeteorClient+Private.h in Headers */,
+				7540D5F21D3F53B200D0C911 /* M13OrderedDictionary.h in Headers */,
+				7540D5FE1D3F53B200D0C911 /* ObjectiveDDP.h in Headers */,
+				7534CBEC1D3E055900017C7A /* rgconnectsdk.h in Headers */,
+				7540D5F61D3F53B200D0C911 /* BSONIdGenerator.h in Headers */,
+				7540D6031D3F53B200D0C911 /* SRWebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7534CBE71D3E055900017C7A /* rgconnectsdk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7534CBFC1D3E055900017C7A /* Build configuration list for PBXNativeTarget "rgconnectsdk" */;
+			buildPhases = (
+				F69CB3BB329FA1DFE5FB0EC9 /* [CP] Check Pods Manifest.lock */,
+				7534CBE31D3E055900017C7A /* Sources */,
+				7534CBE41D3E055900017C7A /* Frameworks */,
+				7534CBE51D3E055900017C7A /* Headers */,
+				7534CBE61D3E055900017C7A /* Resources */,
+				34C4D76BDC479255BC5C854D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rgconnectsdk;
+			productName = rgconnectsdk;
+			productReference = 7534CBE81D3E055900017C7A /* rgconnectsdk.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7534CBF11D3E055900017C7A /* rgconnectsdkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7534CBFF1D3E055900017C7A /* Build configuration list for PBXNativeTarget "rgconnectsdkTests" */;
+			buildPhases = (
+				D4A68D4FE81A720F80E2C0CA /* [CP] Check Pods Manifest.lock */,
+				7534CBEE1D3E055900017C7A /* Sources */,
+				7534CBEF1D3E055900017C7A /* Frameworks */,
+				7534CBF01D3E055900017C7A /* Resources */,
+				FB9AA54395BFA0628D3A5345 /* [CP] Embed Pods Frameworks */,
+				B13A557B4518D547E413FCFA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7534CBF51D3E055900017C7A /* PBXTargetDependency */,
+			);
+			name = rgconnectsdkTests;
+			productName = rgconnectsdkTests;
+			productReference = 7534CBF21D3E055900017C7A /* rgconnectsdkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7534CBDF1D3E055900017C7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "RoundGlass Partners";
+				TargetAttributes = {
+					7534CBE71D3E055900017C7A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					7534CBF11D3E055900017C7A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 7534CBE21D3E055900017C7A /* Build configuration list for PBXProject "rgconnectsdk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7534CBDE1D3E055900017C7A;
+			productRefGroup = 7534CBE91D3E055900017C7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7534CBE71D3E055900017C7A /* rgconnectsdk */,
+				7534CBF11D3E055900017C7A /* rgconnectsdkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7534CBE61D3E055900017C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7540D6011D3F53B200D0C911 /* LICENSE in Resources */,
+				7540D6021D3F53B200D0C911 /* README.rst in Resources */,
+				7540D5F51D3F53B200D0C911 /* LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7534CBF01D3E055900017C7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34C4D76BDC479255BC5C854D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rgconnectsdk/Pods-rgconnectsdk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B13A557B4518D547E413FCFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rgconnectsdkTests/Pods-rgconnectsdkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A68D4FE81A720F80E2C0CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F69CB3BB329FA1DFE5FB0EC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB9AA54395BFA0628D3A5345 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-rgconnectsdkTests/Pods-rgconnectsdkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7534CBE31D3E055900017C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75FD6E6B1D3E648A00BECD40 /* ChatRoomNetworkHandler.swift in Sources */,
+				7540D5F91D3F53B200D0C911 /* DependencyProvider.m in Sources */,
+				7540D5F71D3F53B200D0C911 /* BSONIdGenerator.m in Sources */,
+				7540D5F31D3F53B200D0C911 /* M13OrderedDictionary.m in Sources */,
+				7560B4FC1D3FA6A700D28F30 /* NotificationNetworkHandler.swift in Sources */,
+				75FD6E651D3E51DA00BECD40 /* ChatRoom.swift in Sources */,
+				7540D5FF1D3F53B200D0C911 /* ObjectiveDDP.m in Sources */,
+				7560B4FF1D3FB40900D28F30 /* RGChatMessageService.swift in Sources */,
+				7540D6001D3F53B200D0C911 /* README.md in Sources */,
+				7540D5FA1D3F53B200D0C911 /* MeteorClient+Parsing.m in Sources */,
+				75FD6E631D3E4C0B00BECD40 /* StringExtension.swift in Sources */,
+				7560B4FA1D3F9D8100D28F30 /* UserAuthNetworkHandler.swift in Sources */,
+				75C87D641D40961D00B341E7 /* RGNotificationService.swift in Sources */,
+				75C4F1C31D3F5FA20066E377 /* ChatMessageNetworkHandler.swift in Sources */,
+				7540D5F41D3F53B200D0C911 /* readme.md in Sources */,
+				7540D5FD1D3F53B200D0C911 /* MeteorClient.m in Sources */,
+				7560B5011D3FDA2B00D28F30 /* RGUserService.swift in Sources */,
+				75C87D661D409F1600B341E7 /* RGChatRoomService.swift in Sources */,
+				75C87D6D1D40C2A700B341E7 /* RGConnectSettings.swift in Sources */,
+				75C87D731D40E39100B341E7 /* RGConnectChatDelegate.swift in Sources */,
+				7540D6041D3F53B200D0C911 /* SRWebSocket.m in Sources */,
+				75C87D701D40CDA100B341E7 /* RGConnectSharedManager.swift in Sources */,
+				7534CC071D3E30D800017C7A /* ChatMessage.swift in Sources */,
+				75C87D771D41101900B341E7 /* RGSocketManager.swift in Sources */,
+				75C87D681D40AD6600B341E7 /* User.swift in Sources */,
+				75C87D6A1D40C1A400B341E7 /* MeteorService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7534CBEE1D3E055900017C7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7534CBF81D3E055900017C7A /* rgconnectsdkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7534CBF51D3E055900017C7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7534CBE71D3E055900017C7A /* rgconnectsdk */;
+			targetProxy = 7534CBF41D3E055900017C7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7534CBFA1D3E055900017C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7534CBFB1D3E055900017C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7534CBFD1D3E055900017C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32C957C2EA213C158E5B940 /* Pods-rgconnectsdk.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = rgconnectsdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgp.rgconnectsdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7534CBFE1D3E055900017C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A06128101CE43B1A4F0584 /* Pods-rgconnectsdk.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = rgconnectsdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgp.rgconnectsdk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		7534CC001D3E055900017C7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA511425EB7CCDB73379D0B8 /* Pods-rgconnectsdkTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = rgconnectsdkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgp.rgconnectsdkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7534CC011D3E055900017C7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB08AF89CCC52A49D8AABA70 /* Pods-rgconnectsdkTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = rgconnectsdkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rgp.rgconnectsdkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7534CBE21D3E055900017C7A /* Build configuration list for PBXProject "rgconnectsdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7534CBFA1D3E055900017C7A /* Debug */,
+				7534CBFB1D3E055900017C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7534CBFC1D3E055900017C7A /* Build configuration list for PBXNativeTarget "rgconnectsdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7534CBFD1D3E055900017C7A /* Debug */,
+				7534CBFE1D3E055900017C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7534CBFF1D3E055900017C7A /* Build configuration list for PBXNativeTarget "rgconnectsdkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7534CC001D3E055900017C7A /* Debug */,
+				7534CC011D3E055900017C7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7534CBDF1D3E055900017C7A /* Project object */;
+}

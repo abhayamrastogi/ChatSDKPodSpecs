@@ -1,0 +1,6 @@
+framework module Pods_rgconnectsdkTests {
+  umbrella header "Pods-rgconnectsdkTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
